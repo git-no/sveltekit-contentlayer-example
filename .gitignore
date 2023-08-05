@@ -11,3 +11,7 @@ vite.config.ts.timestamp-*
 
 # Force specific package versions for stable demo purpose
 !package-lock.json
+
+# Contentlayer
+/.contentlayer
+/.vercel

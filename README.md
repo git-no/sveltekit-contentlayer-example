@@ -1,38 +1,37 @@
-# create-svelte
+# SvelteKit Contentlayer Example
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Demo
 
-## Creating a project
+View the deployed project: [Demo](https://sveltekit-contentlayer-example.vercel.app/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+Demo has just the core function, no styles.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Try it Now
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](http://gitpod.io/#https://github.com/git-no/sveltekit-contentlayer-example)
 
-## Developing
+## Local Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the project:
 
-```bash
-npm run dev
+    git clone git@github.com:git-no/sveltekit-contentlayer-example.git
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Install dependencies:
 
-## Building
+    npm install
 
-To create a production version of your app:
+## Generate content & site
 
-```bash
-npm run build
-```
+Generate just content
 
-You can preview the production build with `npm run preview`.
+    npm run content
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Generate content & site
+
+    npm run build
+
+Run dev server:
+
+    npm run dev -- --open
+
+> MDX ist not supported yet.
