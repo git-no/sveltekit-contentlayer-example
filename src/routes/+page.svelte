@@ -5,12 +5,12 @@
 	export let data: PageData;
 </script>
 
-<h1>SvelteKit Contentlayer Demo</h1>
-
-<p>Content driven by Contentlayer</p>
-
-<ul>
-	{#each data.posts as post}
-		<li><a href={post.slugFull}>{post.title}</a> from {formatDate(post.date)}</li>
-	{/each}
-</ul>
+<div class="prose">
+	<h1>SvelteKit Contentlayer Demo</h1>
+	<p>Support of MDX, frontmatter in markdown, Svelte components in markdown.</p>
+	<ul>
+		{#each data.posts as post}
+			<li><a href={post.slugFull}>{post.title}</a> from {formatDate(post.date)}</li>
+		{/each}
+	</ul>
+</div>

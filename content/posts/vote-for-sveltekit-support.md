@@ -1,6 +1,6 @@
 ---
 title: Vote for SvelteKit Support
-date: 2022-02-22
+date: 2023-02-22
 authors:
   - name: Lukas
     handle: lukas
@@ -11,6 +11,6 @@ authors:
   import ExternalLink from '$lib/components/ExternalLink.svelte';
 </script>
 
-Vote for [Svelte Contentlayer](https://github.com/contentlayerdev/contentlayer/issues/170) (via Markdown)
+Vote for [Svelte Contentlayer](https://github.com/contentlayerdev/contentlayer/issues/170) (link created by markdown)
 
-Vote for <ExternalLink ariaLabel=" Svelte Contentlayer" href="https://github.com/contentlayerdev/contentlayer/issues/170">SvelteKit Contentlayer</ExternalLink> (as component)
+Vote for <ExternalLink ariaLabel=" Svelte Contentlayer" href="https://github.com/contentlayerdev/contentlayer/issues/170">SvelteKit Contentlayer</ExternalLink> (link created by Svelte component in markdown)

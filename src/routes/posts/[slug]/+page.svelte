@@ -6,11 +6,12 @@
 	$: author = data.post?.authors ? data.post.authors[0] : null;
 </script>
 
-<h1>{data.post?.title}</h1>
-<h5>Author: {author?.name}</h5>
-
-<article>
-	<div class="prose">
+<article class="prose lg:prose-xl prose-slate">
+	<h1>{data.post?.title}</h1>
+	{#if author}
+		<h5>Author: {author?.name}</h5>
+	{/if}
+	<div>
 		<svelte:component this={data.content} />
 	</div>
 </article>
