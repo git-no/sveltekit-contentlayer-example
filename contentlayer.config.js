@@ -1,14 +1,23 @@
 import { defineDocumentType, defineNestedType, makeSource } from 'contentlayer/source-files';
+import path from 'path';
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
 	slug: {
 		type: 'string',
+		resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/')
+	},
+	slugFull: {
+		type: 'string',
 		resolve: (doc) => `/${doc._raw.flattenedPath}`
 	},
-	slugAsParams: {
+	fileName: {
 		type: 'string',
-		resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/')
+		resolve: (doc) => path.parse(doc._raw.sourceFilePath.split('/').slice(-1).join('/')).name
+	},
+	suffix: {
+		type: 'string',
+		resolve: (doc) => path.parse(doc._raw.sourceFilePath.split('/').slice(-1).join('/')).ext
 	}
 };
 
@@ -24,7 +33,7 @@ const Author = defineNestedType(() => ({
 export const Post = defineDocumentType(() => ({
 	name: 'Post',
 	filePathPattern: `posts/**/*.md`,
-	// contentType: "mdx",
+	// contentType: 'mdx',
 	fields: {
 		draft: {
 			type: 'boolean',

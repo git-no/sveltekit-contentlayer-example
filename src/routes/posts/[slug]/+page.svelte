@@ -7,7 +7,12 @@
 </script>
 
 <h1>{data.post?.title}</h1>
-{#if author}
-	<h5>Author: {author?.name}</h5>
-{/if}
-<div>{@html data.post?.body.html}</div>
+<h5>Author: {author?.name}</h5>
+
+<article>
+	<div class="prose">
+		<svelte:component this={data.content} />
+	</div>
+</article>
+
+<!-- <div>{@html data.post?.body.html}</div> -->

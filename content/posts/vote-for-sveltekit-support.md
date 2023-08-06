@@ -7,4 +7,10 @@ authors:
     avatar: https://pbs.twimg.com/profile_images/1624092671739408417/GGvOzADg_400x400.jpg
 ---
 
-Vote to [Support SvelteKit](https://github.com/contentlayerdev/contentlayer/issues/170)
+<script context="module">
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
+</script>
+
+Vote for [Svelte Contentlayer](https://github.com/contentlayerdev/contentlayer/issues/170) (via Markdown)
+
+Vote for <ExternalLink ariaLabel=" Svelte Contentlayer" href="https://github.com/contentlayerdev/contentlayer/issues/170">SvelteKit Contentlayer</ExternalLink> (as component)

@@ -35,3 +35,8 @@ Run dev server:
     npm run dev -- --open
 
 > MDX ist not supported yet.
+
+Addionally to Svelte main changes for Contentlayer are made:
+
+- vite.config.js
+- tsconfig.json
