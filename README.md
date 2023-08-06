@@ -2,9 +2,9 @@
 
 ## Demo
 
-View the deployed project: [Demo](https://sveltekit-contentlayer-example.vercel.app/)
+Demo of an effective markdown driven website, with a minimum of code needed, cause of very useful [Contentlayer](https://www.contentlayer.dev/), [mdsvex](https://mdsvex.com/) and of course [SvelteKit](https://kit.svelte.dev/).
 
-Demo has just the core function, no styles.
+View the deployed small project: [Demo](https://sveltekit-contentlayer-example.vercel.app/)
 
 ## Try it Now
 
@@ -24,7 +24,7 @@ Install dependencies:
 
 Generate just content
 
-    npm run content
+    npm run build:content
 
 Generate content & site
 
@@ -33,10 +33,3 @@ Generate content & site
 Run dev server:
 
     npm run dev -- --open
-
-> MDX ist not supported yet.
-
-Addionally to Svelte main changes for Contentlayer are made:
-
-- vite.config.js
-- tsconfig.json
