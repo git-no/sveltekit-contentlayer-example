@@ -11,9 +11,8 @@
 	{#if author}
 		<h5>Author: {author?.name}</h5>
 	{/if}
-	<div>
-		<svelte:component this={data.content} />
-	</div>
+	<!-- The Svelte magic - just simple -->
+	<svelte:component this={data.content} />
 </article>
 
 <!-- <div>{@html data.post?.body.html}</div> -->
