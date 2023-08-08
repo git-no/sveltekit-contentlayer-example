@@ -37,7 +37,7 @@ export const Post = defineDocumentType(() => ({
 	fields: {
 		draft: {
 			type: 'boolean',
-			description: 'Show in production mode',
+			description: 'Disable in production mode',
 			default: false
 		},
 		title: {
@@ -62,5 +62,6 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
 	contentDirPath: './content',
-	documentTypes: [Post]
+	documentTypes: [Post],
+	disableImportAliasWarning: true
 });
