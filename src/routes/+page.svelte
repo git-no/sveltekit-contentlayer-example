@@ -8,9 +8,9 @@
 <div class="prose">
 	<h1>SvelteKit Contentlayer Demo</h1>
 	<p>
-		Support of MDX, frontmatter in markdown, Svelte components in markdown with SvelteKit and <a
-			href="https://www.contentlayer.dev/">Contentlayer</a
-		>.
+		Just <strong>two code lines</strong> in Svelte to support MDX, frontmatter in markdown and
+		Svelte components in markdown, made with SvelteKit,
+		<a href="https://www.contentlayer.dev/">Contentlayer</a> and MDsveX.
 	</p>
 	<p />
 	<ul>

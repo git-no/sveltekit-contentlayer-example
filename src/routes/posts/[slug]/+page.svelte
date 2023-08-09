@@ -11,7 +11,7 @@
 	{#if author}
 		<h5>Author: {author?.name}</h5>
 	{/if}
-	<!-- The Svelte magic - just simple -->
+	<!-- The Svelte magic - "just simple" markdown rendering -->
 	<svelte:component this={data.content} />
 </article>
 
