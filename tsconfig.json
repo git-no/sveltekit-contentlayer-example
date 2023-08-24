@@ -32,6 +32,7 @@
 		"./tests/**/*.ts",
 		"./tests/**/*.svelte",
 		".contentlayer/generated",
+		"./src/**/*.md"
 	],
 	"exclude": [
 		"./node_modules/**",
