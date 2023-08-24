@@ -1,0 +1,22 @@
+{
+  "draft": false,
+  "title": "Second Post",
+  "date": "2023-08-27T00:00:00.000Z",
+  "body": {
+    "raw": "\nHello {title} \n",
+    "html": "<p>Hello {title}</p>"
+  },
+  "_id": "posts/Second.md",
+  "_raw": {
+    "sourceFilePath": "posts/Second.md",
+    "sourceFileName": "Second.md",
+    "sourceFileDir": "posts",
+    "contentType": "markdown",
+    "flattenedPath": "posts/Second"
+  },
+  "type": "Post",
+  "slug": "second",
+  "slugFull": "/posts/second",
+  "fileName": "Second",
+  "suffix": ".md"
+}
