@@ -11,6 +11,7 @@ export const load = (async ({ params }) => {
 
 		// Loading file & parsing MDX (by mdsvex)
 		const content = await import(`../../../../content/posts/${post.fileName}.md`); // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#imports-must-end-with-a-file-extension
+		// const content = await import(`./click-me.md`); // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#imports-must-end-with-a-file-extension
 
 		return {
 			post,
