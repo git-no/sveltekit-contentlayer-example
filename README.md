@@ -44,12 +44,15 @@ You can preview the production build with `npm run preview`.
 
 - SvelteKit installed (remove node_modules, package-lock.json, remove .folders
 
-### Install Contentlayer and Configure
 ```bash
 pnpm i
 pnpm update --latest
 pnpm build
-pnpm dev
+```
+
+### Install Contentlayer and Configure
+
+```bash
 pnpm i contentlayer -D
 pnpm i concurrently -D
 ```
